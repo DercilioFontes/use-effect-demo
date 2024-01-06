@@ -1,0 +1,13 @@
+Notes:
+
+> Demo1
+  - Pure function
+  - Reactive
+  - Profiler (Dev tool)
+  - Events
+
+> Demo2
+  - Passing props
+
+> Demo3
+  - Side effect (useEffect)
