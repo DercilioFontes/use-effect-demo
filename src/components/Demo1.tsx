@@ -1,16 +1,16 @@
 import { useState } from "react";
 
 /*
- > Demo1
+  > Demo1
   - Profiler (Dev tool)
   - Pure function
   - Reactive
   - Events
+  - Avoid unnecessary render
  */
 
 export const Demo1 = () => {
   let a = 0;
-  a += 1;
   const [b, setB] = useState(0);
 
   return (
@@ -18,7 +18,7 @@ export const Demo1 = () => {
       <div className="card">
         <button
           onClick={() => {
-            // a += 1;
+            a += 1;
             console.log({ a });
           }}
         >
