@@ -31,3 +31,17 @@ export const Demo1 = () => {
     </>
   );
 };
+
+
+// const [a, setA] = useState(0);
+// () => setA(a + 1);
+
+export const ButtomB = () => {
+  const [b, setB] = useState(0);
+
+  return (
+    <div className="card">
+      <button onClick={() => setB(b + 1)}>count B: {b}</button>
+    </div>
+  );
+};
