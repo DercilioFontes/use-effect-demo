@@ -2,20 +2,28 @@ import { useState } from "react";
 
 /*
  > Demo1
+  - Profiler (Dev tool)
   - Pure function
   - Reactive
-  - Profiler (Dev tool)
   - Events
  */
 
 export const Demo1 = () => {
-  const a = 0;
+  let a = 0;
+  a += 1;
   const [b, setB] = useState(0);
 
   return (
     <>
       <div className="card">
-        <button onClick={() => a + 1}>count A: {a}</button>
+        <button
+          onClick={() => {
+            // a += 1;
+            console.log({ a });
+          }}
+        >
+          count A: {a}
+        </button>
       </div>
       <div className="card">
         <button onClick={() => setB(b + 1)}>count B: {b}</button>
